@@ -1,0 +1,9 @@
+/node_modules
+/chats/bbot/*
+!/chats/bbot/.gitkeep
+/chats/dbot/*
+!/chats/dbot/.gitkeep
+/chats/gbot/*
+!/chats/gbot/.gitkeep
+/chats/tbot/*
+!/chats/tbot/.gitkeep

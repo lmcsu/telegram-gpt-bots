@@ -1,0 +1,35 @@
+{
+    "name": "telegram-gpt-bots",
+    "private": true,
+    "version": "0.0.0",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "@grammyjs/auto-retry": "^2.0.2",
+        "@grammyjs/transformer-throttler": "^1.2.1",
+        "az": "^0.2.3",
+        "commander": "^14.0.3",
+        "grammy": "^1.43.0",
+        "openai": "^6.39.0",
+        "p-retry": "^8.0.0",
+        "tsx": "^4.22.3",
+        "typescript": "^6.0.3",
+        "yaml": "^2.9.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@types/node": "^25.9.1",
+        "eslint": "^10.4.0",
+        "eslint-define-config": "^2.1.0",
+        "globals": "^17.6.0",
+        "typescript-eslint": "^8.59.4"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "start:bbot": "tsx ./index.ts --config ./configs/bbot.yaml --chats ./chats/bbot",
+        "start:dbot": "tsx ./index.ts --config ./configs/dbot.yaml --chats ./chats/dbot",
+        "start:gbot": "tsx ./index.ts --config ./configs/gbot.yaml --chats ./chats/gbot",
+        "start:tbot": "tsx ./index.ts --config ./configs/tbot.yaml --chats ./chats/tbot"
+    }
+}
